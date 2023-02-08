@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 *, *:before, *:after {
   padding: 0;
   margin: 0;
@@ -17,6 +21,10 @@ html, body {
 @font-face {
   font-family: "Steppe-Bold";
   src: url("/fonts/Steppe-Bold.ttf");
+}
+@font-face {
+  font-family: "Steppe-SemiBold";
+  src: url("/fonts/Steppe-SemiBold.ttf");
 }
 @font-face {
   font-family: "Steppe";
@@ -75,6 +83,7 @@ body {
   align-items: center;
   font-size: 20px;
   height: 60px;
+  transition: 0.3s;
 }
 .header .header__nav .nav__list .nav__item .nav__link:hover {
   text-decoration: none;
@@ -115,6 +124,24 @@ body {
   border: solid 2px;
   border-radius: 50px;
 }
+.nav__auth #auth__signin {
+  width: 72px;
+  height: 32px;
+  border: solid 1px #DDDDDD;
+  border-radius: 11px;
+  background-color: white;
+  font-family: "Steppe";
+  font-size: 20px;
+  color: #1C6FFF;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.nav__auth #auth__signin:hover {
+  background-color: #1C6FFF;
+  color: white;
+  border: solid 1px #1C6FFF;
+  box-shadow: 0px 0px 5px #1C6FFF;
+}
 
 #link__active {
   color: #1C6FFF;
@@ -122,10 +149,10 @@ body {
 
 .sidebar {
   width: 335px;
-  top: 60px;
-  height: 95vh;
+  height: 585px;
   border-right: solid 1px #D9D9D9;
-  position: fixed;
+  border-bottom: solid 1px #D9D9D9;
+  border-radius: 5px;
 }
 .sidebar .sidebar__mainMenu {
   margin-top: 25px;
@@ -133,6 +160,7 @@ body {
 }
 .sidebar .sidebar__mainMenu h3 {
   color: #1C6FFF;
+  font-family: "Steppe-SemiBold";
   font-size: 27px;
   margin-bottom: 5px;
 }
@@ -181,6 +209,7 @@ body {
   color: #1C6FFF;
   font-size: 27px;
   margin-bottom: 5px;
+  font-family: "Steppe-SemiBold";
 }
 .sidebar .sidebar__workMenu ul {
   list-style: none;
@@ -275,6 +304,4 @@ body {
   .container {
     max-width: none;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
